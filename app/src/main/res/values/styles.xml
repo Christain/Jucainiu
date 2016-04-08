@@ -1,0 +1,30 @@
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.Base"/>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/WeChatActivityAnimation</item>
+    </style>
+
+    /*TitleBar配置*/
+    <style name="Toolbar.AppCompat.Responsive" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:actionBarSize">@dimen/titlebar_height</item>
+        <item name="actionBarSize">@dimen/titlebar_height</item>
+        <!--<item name="selectableItemBackground">@drawable/titlebar_btn_click_style</item>-->
+        <item name="toolbarStyle">@style/Custom.Widget.Toolbar</item>
+        <item name="toolbarNavigationButtonStyle">@style/Custom.Widget.Toolbar.Navigation</item>
+    </style>
+
+    <style name="Custom.Widget.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="maxButtonHeight">@dimen/titlebar_height</item>
+        <item name="contentInsetStart">0dp</item>
+    </style>
+
+    <style name="Custom.Widget.Toolbar.Navigation" parent="Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:minWidth">@dimen/titlebar_height</item>
+    </style>
+
+</resources>
